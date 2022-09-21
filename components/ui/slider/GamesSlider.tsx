@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import gamesData from "../../data/games-data";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons/lib";
 
 const arrowSize = "2rem";
 

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import GamesSection from "../components/section/games-section";
 import HeroSection from "../components/section/hero-section";
+import MemberSection from "../components/section/member-section";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
     <div>
       <HeroSection />
       <GamesSection />
+      <MemberSection />
     </div>
   );
 };

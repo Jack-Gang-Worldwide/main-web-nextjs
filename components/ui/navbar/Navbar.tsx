@@ -10,7 +10,7 @@ const Navbar = () => {
           <h2 className="text-[36px] text-white font-bold inline-block">JäG</h2>
           <div className="flex flex-row gap-6 items-center">
             {navData.map(({ name, route }, key) => (
-              <Link href={route}>
+              <Link href={route} key={key}>
                 <p className="text-white text-lg hover:cursor-pointer">
                   {name}
                 </p>

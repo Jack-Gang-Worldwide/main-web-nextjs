@@ -11,7 +11,7 @@ const MemberCard = ({ src, alt, nickname, fullName }: props) => {
       <img
         src={src}
         alt={alt ? alt : ""}
-        className="object-contain w-[13.5rem] h-[13.5rem]"
+        className="object-cover w-[13.5rem] h-[13.5rem]"
       />
       <p className="font-bold text-lg">{nickname}</p>
       <p className="text-center w-[13.5rem]">{fullName}</p>

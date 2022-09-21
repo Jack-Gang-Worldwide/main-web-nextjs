@@ -22,7 +22,7 @@ const GallerySection = () => {
         </h2>
         <Masonry {...masonryOptions}>
           {galleryData.map(({ src }, key) => (
-            <div className="w-full">
+            <div className="w-full" key={key}>
               <img
                 src={src}
                 alt={src}

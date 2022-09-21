@@ -1,7 +1,8 @@
 import MemberCard from "../ui/card/MemberCard";
 import memberData from "../data/member-data";
+import { Members, Member } from "../../interfaces/graph-interface";
 
-const MemberSection = () => {
+const MemberSection = ({ members }: Members) => {
   return (
     <section id="members" className="w-full py-32">
       <div className="max-w-[1220px] mx-auto flex flex-col items-center gap-6">
@@ -16,11 +17,12 @@ const MemberSection = () => {
           join Jack Gang Community!
         </p>
         <div className="flex flex-row justify-center gap-8 flex-wrap w-full">
-          {memberData.map(({ src, nickname, fullName }) => (
+          {members.map(({ profile, nickname, name, id }: Member) => (
             <MemberCard
-              src="https://via.placeholder.com/150"
-              nickname="Kuroyamii"
-              fullName="Gery Sastrawan"
+              key={id}
+              src={profile.url}
+              nickname={nickname}
+              fullName={name}
             />
           ))}
         </div>

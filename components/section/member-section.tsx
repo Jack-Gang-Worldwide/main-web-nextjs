@@ -2,9 +2,13 @@ import MemberCard from "../ui/card/MemberCard";
 import memberData from "../data/member-data";
 import { Members, Member } from "../../interfaces/graph-interface";
 
-const MemberSection = ({ members }: Members) => {
+interface Props {
+  members: Member[];
+}
+
+const MemberSection = ({ members }: Props) => {
   return (
-    <section id="members" className="w-full py-32">
+    <section id="members" className="w-full py-24">
       <div className="max-w-[1220px] mx-auto flex flex-col items-center gap-6">
         <h2 className="text-center text-5xl font-bold">
           <span className="text-blue">Meet</span> our members

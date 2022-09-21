@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import gamesData from "../../data/games-data";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons/lib";
 
 const arrowSize = "2rem";
 
@@ -46,14 +46,14 @@ const GamesSlider = () => {
     prevArrow: <ArrowPrev />,
     pauseOnHover: true,
   };
-  useEffect(() => {
-    console.log(gamesData);
-  }, []);
   return (
     <div className="">
       <Slider {...options}>
         {gamesData.map(({ name, href }, key) => (
-          <div className="w-[200px] h-[200px] flex flex-col items-center justify-center">
+          <div
+            className="w-[200px] h-[200px] flex flex-col items-center justify-center"
+            key={key}
+          >
             <img
               key={key}
               src={href}

@@ -2,7 +2,7 @@ import GamesSlider from "../ui/slider/GamesSlider";
 
 const GamesSection = () => {
   return (
-    <section id="games" className="w-full py-32">
+    <section id="games" className="w-full py-24">
       <div className="max-w-[1220px] mx-auto">
         <h2 className="font-bold text-5xl leading-tight">
           <span className="text-red">Play</span> <br />

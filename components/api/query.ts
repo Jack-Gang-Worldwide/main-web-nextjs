@@ -3,7 +3,7 @@ import { baseAPI } from "./base-api";
 const getAllMember = async () => {
   return baseAPI.post("", {
     query: `{
-            members {
+            members(orderBy: order_ASC) {
               id
               name
               nickname
